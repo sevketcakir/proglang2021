@@ -11,6 +11,7 @@ fun soru4 [] = [] | soru4 (h::t) = if h mod 2=1 then h::soru4 t else soru4 t;
 (* Bir fonksiyon ve bir listeyi parametre olarak alan ve listeyi fonksiyona göre filtreleyen fonksiyon *)
 fun soru5 _ [] = [] | soru5 f (h::t) = if f h then h::soru5 f t else soru5 f t; 
 (* map fonksiyonunu kullanan ve parametre olarak verilen listedeki sayıların karesini alıp liste olarak döndüren fonksiyon *)
+fun soru66 l = map (fn x => x*x) l;
 
 datatype 'a BST = Nil | Node of 'a * 'a BST * 'a BST;
 (* İkili arama ağacında arama yapan fonksiyon *)
